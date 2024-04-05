@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 150vh;
+    background-image: url(istockphoto-1283307885-170667a.jpg);
+   
+}
+/* #particles-js{
+    height: 100%;
+    background:rgb(0, 0, 0);
+    
+} */
+@font-face {
+    font-family:heartless ;
+    src: url(rammstein.ttf);
+    
+}
+.metalmania{
+    
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+   font-size: 144px;
+    
+  
+  
+}
+.metalmania span{
+  
+    color: rgb(255, 255, 255);
+    font-family: heartless;
+    width: 100%; /* Make the span as wide as its parent */
+    display: block; /* Fill the entire width */
+    text-align: center; /* Center the text horizontally */
+    
+   
+}
+
+.mainBox {
+  
+
+margin-left: auto;
+margin-right: auto;
+height: 100%;
+width: 80%;   
+/* background-color: black; */
+display: flex;  
+flex-direction: column;
+
+    
+    
+
+  
+   
+   
+}
+.navbar {
+    width: 100%;
+    height: 100px;
+    height: 40px;
+   
+   
+    
+   
+   
+}
+
+.navbar a {
+    color: white; 
+    text-decoration: none; 
+    text-transform: capitalize;
+    margin-right: 20px; 
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 10px;
+    position: relative;
+    font-family: Rodchenko,Roboto Condensed,Arial Narrow,Helvetica Condensed,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;;
+}
+/* .navbar a:hover{
+    color: rgb(161, 161, 161);
+} */
+ a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: all .5s;
+}
+ a:hover::before{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1630px) {
+ .metalmania{
+    font-size: 120px;
+ }
+    
+}
+.mainbar{
+    display: inline-flex;
+    padding: 0;
+}
+.dropdown{
+    list-style: none;
+    
+}
+.mainbar .dropdown{
+    background-color: rgb(163, 163, 163);
+   width: 150px;
+   padding: 0 0 0 15px;
+   font-weight: 400;
+   border-radius: 0px;
+   opacity: 0;
+   visibility: hidden;
+
+}
+.mainbar li:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+    
+}
