@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 <div class="mainBox">
@@ -13,20 +14,128 @@
    </div>
 
    <div class="navbar">
-   <nav>
-   <ul class="mainbar">
-      <li><a href="#">APPAREL</a>
-      <ul class="dropdown">
-         <li><a href="">Mens</a></li>
-         <li><a href="">Woman</a></li>
+      <img class="logo" src="./logo.png" alt="">
+         <div class="dropdown" data-dropdown>
+            <a class="link" href="#" data-dropdown-button >APPAREL</a>
+            
+            <div class="dropdown-menu information-grid">
+               <div>
+                  <div class="dropdown-heading">Men's</div>
+                  <div class="dropdown-links">
+                     <a href="#" class="links">T-shirt</a>
+                     <a href="#" class="links">Long Sleeve Shirts</a>
+                     <a href="#" class="links">Hoodie</a>
+                     <a href="#" class="links">Sweatshirt</a>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="dropdown-heading">Women's</div>
+                     <div class="dropdown-links">
+                        <a href="#" class="links">T-shirt</a>
+                        <a href="#" class="links">Long Sleeve Shirts</a>
+                        <a href="#" class="links">Hoodie</a>
+                        <a href="#" class="links">Sweatshirt</a>
+                     </div>
+               </div>
+               </div>
+
+         </div>
+
+         <div class="dropdown" data-dropdown>
+            <a class="link" href="#" data-dropdown-button >ACCSESSORIES</a>
+            <div class="dropdown-menu information-grid">
+               <div>
+                  <div class="dropdown-heading">Patches</div>
+                  <div class="dropdown-links">
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                  </div>
+
+                     <div class="dropdown-heading">Guitar Belts</div>
+                                       <div class="dropdown-links">
+                                          <a href="#" class="links"></a>
+                                          <a href="#" class="links"></a>
+                                          <a href="#" class="links"></a>
+                                          <a href="#" class="links"></a>
+                                       </div>
+
+
+
+               </div>
+               <div>
+                  
+                  <div class="dropdown-heading">Sticker</div>
+                  <div class="dropdown-links">
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                  </div>
+                  <div class="dropdown-heading">Picks</div>
+                  <div class="dropdown-links">
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="dropdown" data-dropdown>
+            <a class="link" href="#" data-dropdown-button >GUITARS</a>
+            <div class="dropdown-menu information-grid">
+               <div>
+                  <div class="dropdown-heading">Electric Guitar</div>
+                  <div class="dropdown-links">
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                  </div>
+               </div>
+               <div>
+                  <div class="dropdown-heading">Bass Guitar</div>
+                  <div class="dropdown-links">
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                     <a href="#" class="links"></a>
+                  </div>
+                  
+
+               </div>
+
+               
+
+              
+            </div>
+            
+         </div>
+          <div class="dropdown" data-dropdown>
+                  <a class="link" href="#" data-dropdown-button >PRICE</a>
+                  <div class="dropdown-menu information-grid">
+                     <div>
+                        <div class="dropdown-heading"></div>
+                        <div class="dropdown-links">
+                           <span>Min:</span>
+                           <input class="FromTo" type="text">
+                           <span>Max:</span>
+                           <input class="FromTo" type="text">
+                        </div>
+                     </div>
+                     
+                  </div>
+               </div>
+               <button class="search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
          
-      </ul>
-      </li>
-      <li><a href="">GUITARS</a></li>
-      <li><a href="">ACCESSORIES</a></li>
+
+      </div>
       
-   </ul>
-   </nav>
+
    </div>
       
      
@@ -42,6 +151,6 @@
  <script src="particles.js"></script>
     <script src="app.js"></script>
     -->
-
+<script src="./main.js"></script>
 </body>
 </html>
