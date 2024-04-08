@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     height: 150vh;
-    background-image: url(background1.jpg);
+    background-image: url(pictures/background1.jpg);
    
 }
 /* #particles-js{
@@ -88,6 +88,7 @@ flex-direction: column;
  transition: 0.3s;
  z-index: 1;
  background: rgba(0, 0, 0, 0.7);
+ margin-top: 10px;
   
 }
 .sticky{
@@ -266,7 +267,7 @@ padding-top: 2px;
   position: relative;
   overflow: hidden;
   z-index: auto;
-  background-image: url(./dsddd.avif);
+  background-image: url(pictures/dsddd.avif);
 }
 .slider .list{
   position: absolute;
@@ -342,4 +343,9 @@ section{
  
   width: 100%;
   height: 400px;
+  display: flex;
+  
+  
+
+  
 }
