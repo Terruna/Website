@@ -171,6 +171,8 @@ var data = [
     }
 ];
 
+localStorage.setItem('myData', JSON.stringify(data));
+
 
 
 

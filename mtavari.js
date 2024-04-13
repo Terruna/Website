@@ -122,4 +122,11 @@ window.onresize = function(event) {
     stopAutoPlay();
 };
 
-// chemi
+
+
+document.getElementById("searchbtn").addEventListener("click", function() {
+    var inputValue = document.getElementById("searchinp").value;
+
+    localStorage.setItem("searchQuery", inputValue);   
+    window.location.href = "./search-result.html";
+});
