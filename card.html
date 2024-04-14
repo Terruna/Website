@@ -2,26 +2,203 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="./pictures/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>METALMANIA</title>
+    <link rel="stylesheet" href="./maincard.css">
    
+    <link rel="stylesheet" href="mtavari.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+<div class="mainBox">
+   <div class="metalmania">
+    <a href="./mtavari.html"><span>METALMANIA</span></a> 
+   </div>
+
+   <div class="navbar">
+      <a href="./mtavari.html"><img class="logo" src="pictures/logo.png" alt=""></a> 
+          <div class="dropdown" data-dropdown>
+             <a class="link" href="" data-dropdown-button >APPAREL</a>
+             
+             <div class="dropdown-menu information-grid">
+                <div>
+                   <div class="dropdown-heading">Unisex</div>
+                   <div class="dropdown-links">
+                      <a onclick="Tshirt()" id="tshirt" href="./search-result.html" class="links">T-shirt</a>
+                      <a onclick=" Longs()" href="./search-result.html " id="longs" class="links">Long Sleeve Shirts</a>
+                      <a onclick="Hoodie()" href="./search-result.html" id="hoodie" class="links">Hoodie</a>
+                      <a onclick="Sweatshirt()" href="./search-result.html" id="sweatshirt" class="links">Sweatshirt</a>
+                   </div>
+                </div>
+ 
+              
+                </div>
+ 
+          </div>
+ 
+          <div class="dropdown" data-dropdown>
+             <a class="link" href=" " data-dropdown-button >ACCSESSORIES</a>
+             <div class="dropdown-menu information-grid">
+                <div>
+                   <div class="dropdown-heading">Patches</div>
+                   <div class="dropdown-links">
+                      <a href=" " class="links"></a>
+                      <a href=" " class="links"></a>
+                      <a href=" " class="links"></a>
+                      <a href=" " class="links"></a>
+                   </div>
+ 
+                      <div class="dropdown-heading">Guitar Belts</div>
+                                        <div class="dropdown-links">
+                                           <a href=" " class="links"></a>
+                                           <a href=" " class="links"></a>
+                                           <a href=" " class="links"></a>
+                                           <a href="" class="links"></a>
+                                        </div>
+ 
+ 
+ 
+                </div>
+                <div>
+                   
+                   <div class="dropdown-heading">Sticker</div>
+                   <div class="dropdown-links">
+                      <a href="" class="links"></a>
+                      <a href="" class="links"></a>
+                      <a href="" class="links"></a>
+                      <a href="" class="links"></a>
+                   </div>
+                   <div class="dropdown-heading">Picks</div>
+                   <div class="dropdown-links">
+                      <a href="" class="links"></a>
+                      <a href="" class="links"></a>
+                      <a href="" class="links"></a>
+                      <a href="" class="links"></a>
+                   </div>
+                </div>
+             </div>
+          </div>
+ 
+          <div class="dropdown" data-dropdown>
+             <a class="link" href=" " data-dropdown-button >GUITARS</a>
+             <div class="dropdown-menu information-grid">
+                <div>
+                   <div class="dropdown-heading">Electric Guitar</div>
+                   <div class="dropdown-links">
+                      <a href="" class="links"></a>
+                      <a href="" class="links"></a>
+                      <a href="" class="links"></a>
+                      <a href="" class="links"></a>
+                   </div>
+                </div>
+                <div>
+                   <div class="dropdown-heading">Bass Guitar</div>
+                   <div class="dropdown-links">
+                      <a href="" class="links"></a>
+                      <a href="" class="links"></a>
+                      <a href="" class="links"></a>
+                      <a href="" class="links"></a>
+                   </div>
+                   
+ 
+                </div>
+ 
+                
+ 
+               
+             </div>
+             
+          </div>
+           <div class="dropdown" data-dropdown>
+                   <a class="link" href="" data-dropdown-button >PRICE</a>
+                   <div class="dropdown-menu information-grid">
+                      <div>
+                         <div class="dropdown-heading"></div>
+                         <div class="dropdown-links">
+                            <span>Min:</span>
+                            <input class="FromTo" type="text">
+                            <span>Max:</span>
+                            <input class="FromTo" type="text">
+                         </div>
+                      </div>
+                      
+                   </div>
+                </div>
+                <button  onclick="togglePopup()" class="search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                <div class="popup" id="popup1">
+                   <div class="overlay"></div>
+                   <div class="content">
+                      <div onclick="togglePopup()" class="close-btn">&times;</div>
+                      <input type="text" name="" class="searchinp" id="searchinp">
+                      <button  id="searchbtn" class="searchbtn2"> <i class="fa-sharp fa-solid fa-magnifying-glass searchbtn2"></i></button>
+                   </div>
+                </div>
+ 
+       </div>
+       
     
-    <input id="inp" type="text">
-    <button id="btn"></button>
-    
+ <div class="card">
+  <img src="" alt="Product Image" id="productImage">
+  <div class="Info">
+  <h3 id="productTitle"></h3>
+  <div class="price"><p id="productPrice"></p></div>
+  
+  </div>
+</div>   
 
+      
+     
 
+     
+ 
+  
 
+   </div>
+<footer>
+<div class="ftconteiner">
+   <ul class="list1">
+      <li><a class="list1a" target="_blank" href="https://www.instagram.com/metalmania_shop/">INSTAGRAM</a></li>
+      <li><a class="list1a" target="_blank" href="https://www.facebook.com/profile.php?id=61552600144532">FACEBOOK</a></li>
+      <li><a class="list1a" href="./shipping.html">SHIPPING & RETURNS</a></li>
+      <li><a class="list1a" href="./Terms.html">Terms and Conditions </a></li>
+   </ul>
+   <ul class="list1">
+      <li><a class="list1a" href="./Contact.html">CONTACT</a></li>
+      <li><a class="list1a" href="./FAQ.html">FAQ</a></li>
+     
 
+   </ul>
+   <ul class="disclaimer">
+      <p >At Metalmania, we specialize in metal band clothing and merchandise. Please note:</p>
+      <p>For Personal Use: Our products are for personal use only.
+      No Commercial Redistribution: Commercial resale is prohibited.
+      Review Terms: Consult our Terms and Conditions for details.</p>
+      <p>Thank you for choosing Metalmania!</p>
+      
+   </ul>
+   <ul class="credit"> <li class="cardlogo">
+      <img src="pictures/Visa_Brandmark_Blue_RGB.png" alt="">
+      <img src="pictures/mastercard-icon-1024x643-j3zb44jj.png" alt="">
+      <img src="pictures/PAYPAL_LOGO_480x480.webp" alt="">\
+      <img src="pictures/American_Express-4876c7d0db694256968485f3085dfa78-removebg-preview.png" alt="">
+   </li></ul>
+  
 
+</div>
 
+</footer>
+      
+     
 
+        
 
+   
+       
+</div>
 
+<script src="./card.js"></script>
 
-    <script src="./search-engine.js"></script>
 
 </body>
 </html>

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="x-icon" href="./pictures/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>METALMANIA</title>
+    <title>Shipping and Returns Policy</title>
+  <link rel="stylesheet" href="./FAQ.css">
     <link rel="stylesheet" href="./card.css">
     <link rel="stylesheet" href="mtavari.css">
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
@@ -136,43 +138,31 @@
 
       </div>
       
-      <div class="slider">
-         <div class="list">
-             <div class="item">
-                 <img src="pictures/1.png" alt="">
-             </div>
-             <div class="item">
-                 <img src="pictures/2.png" alt="">
-             </div>
-             <div class="item">
-                 <img src="pictures/3.png" alt="">
-             </div>
-             <div class="item">
-                 <img src="pictures/4.png" alt="">
-             </div>
-             <div class="item">
-                 <img src="pictures/5.png" alt="">
-             </div>
-            
-         </div>
-         <div class="buttons">
-             <button id="prev"><</button>
-             <button id="next">></button>
-         </div>
-         <ul class="dots">
-             <li class="active"></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-         </ul>
-     </div>
- 
-   <section>  
- 
-      
-   </section>
+     
+      <h1>Frequently Asked Questions</h1>
 
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('answer1')">Q: How long does shipping take?</div>
+        <div class="faq-answer" id="answer1">A: Shipping within Tbilisi takes 3-5 business days. Shipping to other cities within Georgia takes 5-7 business days. Shipping to regions within Georgia takes 7-10 business days.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('answer2')">Q: What is your return policy?</div>
+        <div class="faq-answer" id="answer2">A: We accept returns for defective or incorrect items within [number of days] days of delivery. Please refer to our Returns Policy for detailed instructions.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('answer3')">Q: Do you offer international shipping?</div>
+        <div class="faq-answer" id="answer3">A: At the moment, we only offer shipping within Georgia. We do not offer international shipping.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('answer4')">ფილიალი გაქვთ სადმე?</div>
+        <div class="faq-answer" id="answer4">A: ამ მომენტში არ გვაქვს ფილიალი.</div>
+      </div>
+      <!-- Add more FAQ items as needed -->
+      
+    
 
    </div>
 <footer>
@@ -218,7 +208,7 @@
 </div>
 <script src="./objects.js"></script>
 <script src="./mtavari.js"></script>
-
+<script src="./FAQ.js"></script>
 
 </body>
 </html>

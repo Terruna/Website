@@ -1,0 +1,30 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      
+      color: #ffffff;
+    }
+    h1 {
+      text-align: center;
+    }
+    .policy-section {
+      margin-bottom: 30px;
+    }
+    .policy-section h2 {
+      color: #949494;
+      margin-bottom: 10px;
+    }
+    .policy-section p {
+        color: #ffffff;
+      line-height: 1.5;
+    }
+    .policy-list {
+      list-style-type: disc;
+      color: #ffffff;
+      padding-left: 20px;
+      
+    }
+    p strong{
+        color: rgb(115, 10, 5);
+        font-size: 20px;
+      }

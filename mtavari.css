@@ -17,10 +17,8 @@ body{
 }
 .metalmania{
     
-    width: 100%;
-    height: 125px;
-    display: flex;
-    justify-content: center;
+    width:1490px;
+ 
    font-size: 144px;
     
   
@@ -56,12 +54,12 @@ flex-direction: column;
 }
 
 /* font-family: Rodchenko,Roboto Condensed,Arial Narrow,Helvetica Condensed,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;; */
-@media only screen and (max-width: 1630px) {
+/* @media only screen and (max-width: 1630px) {
  .metalmania{
     font-size: 120px;
  }
     
-}
+} */
 
 
 .logo{
@@ -272,7 +270,7 @@ padding-top: 2px;
 .slider .list{
   position: absolute;
   width: max-content;
-  height: 100%;
+ 
   left: 0;
   top: 0;
   display: flex;
@@ -337,10 +335,13 @@ padding-top: 2px;
     display: none;
   }
 }
+#sectionn{
+  display: flex;
+  flex-wrap:wrap ;
+}
 
 section{
   margin: 40px 0;
- 
   width: 100%;
   display: flex;
 }
@@ -396,13 +397,15 @@ footer {
 }
 
 .cardlogo{
-
-  width: 100px;
+ width: 100px;
   height: 70px;
+margin-left: 100px;
+  
   
   list-style: none;
- margin-left: 860px;
+ 
 }
+
 .metalmania a{
   text-decoration: none;
   cursor: pointer;
@@ -411,5 +414,15 @@ footer {
 button a{
   text-decoration: none;
  color: grey;
+
+}
+
+.disclaimer{
+  font-size: 20px;
+  color: #4d4d4d;
+  width: 600px;
+  margin-left: 200px;
+ 
+
 
 }

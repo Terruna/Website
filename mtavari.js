@@ -130,3 +130,28 @@ document.getElementById("searchbtn").addEventListener("click", function() {
     localStorage.setItem("searchQuery", inputValue);   
     window.location.href = "./search-result.html";
 });
+
+
+
+function Tshirt(){
+    let inputValue = "T-shirt"
+    localStorage.setItem("searchQuery", inputValue);   
+    window.location.href = "./search-result.html";
+}
+
+function Longs(){
+    let inputValue = "Long Sleeve Shirt"
+    localStorage.setItem("searchQuery", inputValue);   
+    window.location.href = "./search-result.html";
+}
+function Hoodie(){
+    let inputValue = "Hoodie"
+    localStorage.setItem("searchQuery", inputValue);   
+    window.location.href = "./search-result.html";
+}
+
+function Sweatshirt(){
+    let inputValue = "Sweatshirt"
+    localStorage.setItem("searchQuery", inputValue);   
+    window.location.href = "./search-result.html";
+}

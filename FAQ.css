@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  h1 {
+    text-align: center;
+    font-size: 100px;
+  }
+  .faq-item {
+    margin-bottom: 40px;
+  }
+  .faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 40px;
+    color: rgb(117, 0, 0);
+  }
+  .faq-answer {
+    margin-top: 5px;
+    display: none;
+    font-size: 40px;
+
+  }
+
+
+
+  .faq-question::after {
+    content: "\25BC"; /* Unicode down arrow */
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s;
+  }
+  .faq-open .faq-question::after {
+    transform: rotateX(180deg);
+  }
+
+  .faq-open .faq-answer {
+    display: block;
+  }

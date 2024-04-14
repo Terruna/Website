@@ -11,7 +11,7 @@ var storedData = JSON.parse(storedDataString);
         if (name.includes(inputValue.toLowerCase())) {
             let section = document.querySelector("section");
             section.innerHTML += `
-            <div class="card">
+            <div class="card" onclick="openProduct('${items.image}', '${items.name}', '${items.price}')">
                 <div class="card-image">
                     <img src="${items.image}" alt="">
                 </div>
@@ -91,5 +91,39 @@ if(sectionn.innerHTML.length == 12){
 }
 
 
-console.log(sectionn.innerHTML.length);
+
+
+function openProduct(image, title, price) {
+
+      sessionStorage.setItem('product_image', image);
+    sessionStorage.setItem('product_title', title);
+    sessionStorage.setItem('product_price', price);
+    window.open("card.html");  
+    
+    
+  }
+
+  
+function Tshirt(){
+    let inputValue = "T-shirt"
+    localStorage.setItem("searchQuery", inputValue);   
+    window.location.href = "./search-result.html";
+}
+
+function Longs(){
+    let inputValue = "Long Sleeve Shirt"
+    localStorage.setItem("searchQuery", inputValue);   
+    window.location.href = "./search-result.html";
+}
+function Hoodie(){
+    let inputValue = "Hoodie"
+    localStorage.setItem("searchQuery", inputValue);   
+    window.location.href = "./search-result.html";
+}
+
+function Sweatshirt(){
+    let inputValue = "Sweatshirt"
+    localStorage.setItem("searchQuery", inputValue);   
+    window.location.href = "./search-result.html";
+}
 

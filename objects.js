@@ -169,6 +169,36 @@ var data = [
         price:"40$",
         image:"pic/l7.png"
     }
+    ,
+    {  
+    type:"guitar",
+    name:"ibanez-rg42pb",
+    price:"200$",
+    image:"pic/ibanez-red-black.png"
+    } 
+    ,
+    {  
+    type:"guitar",
+    name:"PRS Custom 22",
+    price:"350$",
+    image:"pic/PRS Custom 22.webp"
+    }     
+    ,
+    {  
+    type:"guitar",
+    name:"Gretsch G6136T-LTV White Falcon 2015",
+    price:"650$",
+    image:"pic/Gretsch G6136T-LTV White Falcon 2015.webp"
+    }
+    ,
+    {  
+    type:"guitar",
+    name:"ibanez-gio-grg131dx",
+    price:"650$",
+    image:"pic/ibanez rg42pb.png"
+    }     
+
+
 ];
 
 localStorage.setItem('myData', JSON.stringify(data));
@@ -192,7 +222,7 @@ let randomItems = getRandomItems(data, 4);
 randomItems.forEach(item => {
     let section = document.querySelector("section");
     section.innerHTML += `
-    <div class="card">
+    <div class="card"  onclick="openProduct('${item.image}', '${item.name}', '${item.price}')">
         <div class="card-image">
             <img src="${item.image}" alt="">
         </div>
@@ -205,3 +235,10 @@ randomItems.forEach(item => {
         </div>
     </div>`;
 });
+
+function openProduct(image, title, price) {
+    sessionStorage.setItem('product_image', image);
+    sessionStorage.setItem('product_title', title);
+    sessionStorage.setItem('product_price', price);
+    window.open("card.html");
+  }
