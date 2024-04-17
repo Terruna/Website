@@ -350,16 +350,16 @@ footer {
   height: 270px;
   width: 100%;
   background-color: rgb(19, 19, 19);
-  display: block;
+  display:flex;
   flex-shrink: 0;
   
   
 }
 
 .ftconteiner{
-  display: flex;
-  
-  /* background-color: #ffffff; */
+ 
+  display:flex;
+ 
   
 }
 .list1{

@@ -240,5 +240,5 @@ function openProduct(image, title, price) {
     sessionStorage.setItem('product_image', image);
     sessionStorage.setItem('product_title', title);
     sessionStorage.setItem('product_price', price);
-    window.open("card.html");
+    window.location.href = "card.html";
   }
